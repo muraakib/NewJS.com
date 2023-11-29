@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function hi(){
+            if (document.querySelector('h2').innerHTML === 'Hi!'){
+                document.querySelector('h2').innerHTML = 'Goodbye!';
+            } else {
+                document.querySelector('h2').innerHTML = 'Hi!';
+            }
+            
+        }
+        function update(){
+            if (document.querySelector('h3').innerHTML === 'Update Text'){
+                document.querySelector('h3').innerHTML = 'Done!';
+            } else {
+                document.querySelector('h3').innerHTML = 'Update Text';
+            }
+        }
+        function money(){
+            if (document.querySelector('h1').innerHTML === 'JavaScript Programming'){
+                document.querySelector('h1').innerHTML = 'Need $$Money';
+            } else {
+                document.querySelector('h1').innerHTML = 'JavaScript Programming'
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="mid">
+        <h1>JavaScript Programming</h1>
+        <h3>Update Text</h3>
+        <h2>Hi!</h2>
+        <button onclick="update()" class="button" role="button">Update</button>
+        <button onclick="money()" class="button" role="button">Taka</button>
+        <button onclick="hi()" class="button" role="button">Click</button>
+    </div>
+</body>
+</html>

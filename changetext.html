@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text | Over</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function hi(){
+            document.querySelector('h2').innerHTML = 'Goodbye!';
+        }
+        function update(){
+            document.querySelector('h3').innerHTML = 'Done!';
+        }
+        function money(){
+            document.querySelector('h1').innerHTML = 'Need $$Money';
+        }
+    </script>
+</head>
+<body>
+    <div class="mid">
+        <h1>JavaScript Programming</h1>
+        <h3>Update Text</h3>
+        <h2>Hi!</h2>
+        <button onclick="update()" class="button" role="button">Update</button>
+        <button onclick="money()" class="button" role="button">Taka</button>
+        <button onclick="hi()" class="button" role="button">Click</button>
+    </div>
+</body>
+</html>
