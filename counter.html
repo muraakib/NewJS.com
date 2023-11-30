@@ -27,8 +27,16 @@
         
         function count(){
             counter++;
-            alert(counter);
+            document.querySelector('h2').innerHTML = counter;
+
+            if (counter % 10 === 0) {
+                alert(`Count is now ${counter}`);
+            }
         }
+
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelector('button').onclick = count;
+        });
 
         // let add = 0;
         // function addone(){
@@ -51,7 +59,7 @@
         <h1>JavaScript Programming</h1>
         <h3>Working</h3>
         <h2>0</h2>
-        <button onclick="count()" class="button" role="button">Count</button>
+        <button class="button" role="button">Count</button>
     </div>
 </body>
 </html>
